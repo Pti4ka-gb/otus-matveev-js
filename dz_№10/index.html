@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамические параграфы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Динамические параграфы</h1>
+        
+        <div class="paragraphs-container" id="paragraphsContainer">
+            <p class="paragraph">Первый параграф. Это начальный текст, который будет удален при добавлении новых элементов.</p>
+            <p class="paragraph">Второй параграф. Добавьте свой текст в поле ниже и нажмите кнопку "Добавить".</p>
+            <p class="paragraph">Третий параграф. Когда параграфов станет больше трех, первый из них будет автоматически удален.</p>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="textInput" placeholder="Введите текст для нового параграфа...">
+            <button id="addButton" class="hidden">Добавить параграф</button>
+        </div>
+        
+        <div class="counter">
+            Текущее количество параграфов: <span id="paragraphCount">3</span>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Как использовать:</h3>
+            <ul>
+                <li>Кнопка "Добавить параграф" активна только когда поле ввода не пустое</li>
+                <li>При клике на кнопку добавляется новый параграф с текстом из поля ввода</li>
+                <li>Если параграфов становится больше трех, первый из них удаляется</li>
+                <li>Поле ввода очищается после добавления нового параграфа</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
