@@ -1,0 +1,1 @@
+{"name":"dynamic-paragraphs","version":"1.0.0","description":"�������᪨� ��ࠣ��� � ��⠬� � ����ࠬ�","main":"script.js","scripts":{"test":"jest","lint":"eslint script.js tests/*.js","lint:fix":"eslint script.js tests/*.js --fix"},"keywords":[],"author":"","license":"ISC","devDependencies":{"eslint":"^8.57.1","jest":"^29.7.0","jest-environment-jsdom":"^29.7.0"}}
